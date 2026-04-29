@@ -59,7 +59,15 @@ Finally, GridSearchCV with stratification(consistent class proportions) would be
 What did your research find?
 
 #### Next steps
-What suggestions do you have for next steps?
+Customer outreach 
+Block card transaction - Call and verify 
+Two step authentication to discourage account takeover 
+FaceID , Biometrics recongnition 
+More sophisticated algorithms in order to detect new evolving complex fraud patterns. 
+SHAP plot - Feature interpretability by mapping back to linear combination of actual features for stakeholders from PCA values. 
+
+Model deployment and finding model by scalability and suitability to actual business , remember millions of transactions happen across various online platofrms such as Mobile device , internet , payment gateways , POS sale purchase , Direct Debits, Scheduled transfers to name a few . 
+Multinomial classification models need to be built to categorize type of frauds in order to optimize resource spend in improving transaction processes. 
 
 #### Outline of project
 https://github.com/Subroy1/CapstoneProject/blob/main/CreditCardFraudCapstone.ipynb
@@ -68,5 +76,3 @@ https://github.com/Subroy1/CapstoneProject/blob/main/CreditCardFraudCapstone.ipy
 
 ### Author
 Subhojit Roy
-
-
