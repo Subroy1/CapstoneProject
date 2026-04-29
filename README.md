@@ -55,6 +55,13 @@ Since synthesized data can introduce noise and this is a classification problem,
 
 Finally, GridSearchCV with stratification(consistent class proportions) would be run for identifying correct hyperparameters yielding best estimator results. Training and prediction times would also be kept in mind in deciding an optimal classifier . 
 
+**Evaluation metrics**
+In order to evaluate performance of different algorithms, confusion matrix , F1-score , precision and recall would be used. Specifically , aim would be for a high recall score to avoid any fraud transaction cases going undetected. 
+
+Precision would also need to be moderately high at an acceptable level to avoid declining transactions of too many customers. To keep a balance , F1-score would also be evaluated. Similarly, AUROC would also be a complementary measure to detect classification discrimination strength. 
+
+As such, the best model would be with a larger area under Precision-Recall-Curve  for an imbalanced test dataset like fraud detection. 
+
 #### Results
 What did your research find?
 
