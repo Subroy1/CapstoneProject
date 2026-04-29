@@ -18,11 +18,11 @@ In all of the classification machine learning algorithms available to us, which 
 The dataset is sourced from OpenML and contains historical financial transactions labeled for fraud detection. The target variable is Class, a binary indicator where 1 represents fraud and 0 represents non-fraud.
 Features include:
 
-**V1–V28** : Anonymized variables derived using Principal Component Analysis to protect sensitive information
+1. **V1–V28** : Anonymized variables derived using Principal Component Analysis to protect sensitive information
 
-**Time**: Seconds elapsed since the first transaction (can be converted into time-of-day format)
+2. **Time**: Seconds elapsed since the first transaction (can be converted into time-of-day format)
 
-**Amount**: Transaction value
+3. **Amount**: Transaction value
 
 Due to privacy constraints, original features (e.g., location, device type) are not available. While this limits interpretability and exploratory analysis, it does not impact the application of machine learning models, evaluation metrics, or predictive performance.
 
