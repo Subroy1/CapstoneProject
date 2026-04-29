@@ -39,7 +39,21 @@ Due to privacy constraints, original features (e.g., location, device type) are 
 Note: The dataset is in .arff format and can be loaded using scipy.io.arff, then converted to CSV for easier processing.
 
 #### Methodology
-What methods are you using to answer the question?
+From a statistical perspective, fraud cases are extremely rare compared to genuine transactions resulting in extreme class imbalance . 
+**Data Cleaning and Preprocessing techniques**
+1. Feature importance techniques and correlation analysis will be used for model performance. 
+2. Feature scaling would be done where necessary(KNN and SVM which depend on distances of data points) for non-PCA transformed features such as time and amount upon inspection.
+3. SMOTE (Synthetic Minority Oversampling Technique) would augment synthetic fraud cases for the model to have a more balanced split of 2 classes (fraud vs non-fraud) only on the training data . 
+
+All preprocessing steps including SMOTE would be applied within a cross validation pipeline to prevent data leakage.
+**Machine learning techniques**
+Supervised techniques such as Logistic Regression,KNN, Random Forest (bagging), SVM classifiers (with various kernels such as Polynomial, linear and RBF ) , XGBoost and Decision Trees would be used for comparison. In addition, combination models such as Tree ensemble would be used with and without oversampling during the Model Evaluation phase.
+
+Some unsupervised techniques to automatically detect anomalies such as Isolation Forest would be explored. 
+
+Since synthesized data can introduce noise and this is a classification problem, some algorithms may even perform poorly with sampling,we would run w/o sampling with class_weight='balanced' to counter extreme Imbalance. 
+
+Finally, GridSearchCV with stratification(consistent class proportions) would be run for identifying correct hyperparameters yielding best estimator results. Training and prediction times would also be kept in mind in deciding an optimal classifier . 
 
 #### Results
 What did your research find?
