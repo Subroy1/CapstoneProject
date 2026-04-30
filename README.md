@@ -66,20 +66,17 @@ As such, the best model would be with a larger area under Precision-Recall-Curve
 What did your research find?
 
 #### Next steps
-Customer outreach 
-Block card transaction - Call and verify 
-Two step authentication to discourage account takeover 
-FaceID , Biometrics recongnition 
-More sophisticated algorithms in order to detect new evolving complex fraud patterns. 
-SHAP plot - Feature interpretability by mapping back to linear combination of actual features for stakeholders from PCA values. 
+The primary purpose at this point is EDA on the given dataset with a simple baseline model to set the stage for more sophisticated model comparisons afterwards. In part II of the assignment , we would shift our focus towards deep diving into complex model building including unsupervised learning to unravel hidden patterns in fraud cases. 
 
-Model deployment and finding model by scalability and suitability to actual business , remember millions of transactions happen across various online platofrms such as Mobile device , internet , payment gateways , POS sale purchase , Direct Debits, Scheduled transfers to name a few . 
+Model deployment and finding model by scalability and suitability to actual business,  millions of transactions happen across various online platofrms such as Mobile device , internet , payment gateways , POS sale purchase , Direct Debits, Scheduled transfers to name a few . 
+
 Multinomial classification models need to be built to categorize type of frauds in order to optimize resource spend in improving transaction processes. 
 
 #### Outline of project
 https://github.com/Subroy1/CapstoneProject/blob/main/CreditCardFraudCapstone.ipynb
 
-##### Contact and Further Information
-
 ### Author
 Subhojit Roy
+
+##### Contact and Further Information
+**NOTE ** EDA has been complemented by manual visual inspections (describe,info, exploration of PCA values and their relationships) plus a relative feature importance as revealed through L1 regularization plots and SHAP plots. 
