@@ -23,6 +23,11 @@ Timely intervention of credit card companies in alerting customers for suspiciou
 #### Research Question
 In all of the classification machine learning algorithms available to us, which one would best work in detecting close to 100% of fradulent credit card transactions in upholding customer trust and reputation of the financial institiution.Machine learning algorithms are boradly classified under Supervised(works off labeled data) and Unsupervised Learning (learn from patterns or behaviors). While most of the classifiers work off labeled data, are there any unsupervised techniques (Isolation Forest(s)?) that can find hidden patterns inside the transaction behaviors in detecting fraud outliers. Most importantly, are the solution developed with these algorihms future proof and scalable to the extent when fraudsters devise new strategies and channels to exploit vulnerable customers. 
 
+Hypothesis task-
+Goal: To determine if the model (e.g., Logistic Regression) significantly outperforms a baseline (e.g., random guessing or a simple rule-based model) in identifying fraudulent transactions.
+Null Hypothesis (Ho): The model has no predictive power; observed fraud detection is due to chance.
+Alternative Hypothesis (Ha): The model reliably distinguishes fraudulent from legitimate transactions.
+
 #### Data Sources
 
 The dataset is sourced from OpenML and contains historical financial transactions labeled for fraud detection. The target variable is Class, a binary indicator where 1 represents fraud and 0 represents non-fraud.
