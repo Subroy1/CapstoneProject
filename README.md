@@ -37,6 +37,7 @@ Features include:
 Due to privacy constraints, original features (e.g., location, device type) are not available. While this limits interpretability and exploratory analysis, it does not impact the application of machine learning models, evaluation metrics, or predictive performance.
 
 Note: The dataset is in .arff format and can be loaded using scipy.io.arff, then converted to CSV for easier processing.
+<img width="569" height="461" alt="image" src="https://github.com/user-attachments/assets/5509cd8b-b4ef-4368-9ef9-8b5e60f1bcb5" />
 
 #### Methodology
 From a statistical perspective, fraud cases are extremely rare compared to genuine transactions resulting in extreme class imbalance . 
