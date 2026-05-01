@@ -72,7 +72,11 @@ Precision would also need to be moderately high at an acceptable level to avoid 
 As such, the best model would be with a larger area under Precision-Recall-Curve  for an imbalanced test dataset like fraud detection. 
 
 #### Results
-What did your research find?
+For imbalanced datasets like fraud detection, PRC AUC is generally a more reliable and informative metric than ROC AUC because it focuses on the performance of the minority class, which is typically the class of interest. PRC AUC of 0.78 suggests an average model still .
+
+Noise Amplification: Most likely what happened is given that fraudulent data point is an outlier—an isolated transaction that doesn't share characteristics with other fraud, SMOTE created synthetic data points around this noise, leading to higher False Positives and an unclear decision boundary.
+
+ROC AUC (Receiver Operating Characteristic - Area Under the Curve): This metric plots the True Positive Rate (TPR) against the False Positive Rate (FPR) at various threshold settings. An ROC AUC of 1.0 indicates a perfect classifier, meaning it can distinguish between positive and negative classes perfectly without any overlap. However, for highly imbalanced datasets, the ROC curve can be misleading because the FPR doesn't effectively penalize misclassifications of the minority class. Hence , the need to evaluate further complex models.
 
 #### Next steps
 The primary purpose at this point is EDA on the given dataset with a simple baseline model to set the stage for more sophisticated model comparisons afterwards. In part II of the assignment , we would shift our focus towards deep diving into complex model building including unsupervised learning to unravel hidden patterns in fraud cases. 
